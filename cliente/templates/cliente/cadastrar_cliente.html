@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Cliente</title>
+    <!--Fazendo referêcia ao CSS e dando um extend na base.html
+    A ordem das chamadas importa também, a extends tem que vir depois do CSS-->
+    <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilo_cadastro_cliente.css">
+    <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilolink.css">
+
+</head>
+<body>
+<div id="container">
+    <div id="topo">
+        <h1 id="titulo">Cadastro de Cliente</h1>
+    </div>
+    <div id="posiciona">
+    <fieldset id="fieldset">
+        <legend>Dados do Cliente</legend>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><button type="submit">SALVAR</button></p>
+        {% if cliente %}
+            <a href="{% url 'Deletar Cliente' cliente.id_cliente %}">DELETAR CLIENTE</a>
+        {% endif%}
+    </form>
+    </fieldset>
+    </div>
+    <div id="rodape">
+        <h1>Floricultura - MiniDevs</h1>
+    </div>
+</div>
+</body>
+</html>

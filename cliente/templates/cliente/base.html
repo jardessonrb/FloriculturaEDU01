@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BEM VINDO AO NOSSO SITE</title>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="/static/cliente/css/menu_dropdown.css">
+</head>
+    <body>
+    {% block rodape %}
+        <nav class="menu">
+                <ul>
+                    <li><a href="{% url 'Cadastro Erro' %}">Relatar erro</a></li>
+                    <li><a href="#">Listagem</a>
+                    <ul>
+                        <li><a href="{% url 'Lista Cliente' %}">Clientes cadastrados</a></li>
+                        <li><a href="{% url 'Lista Funcionario' %}">Funcion&aacute;rios cadastrados</a></li>
+                        <li><a href="{% url 'Lista Produto' %}">Produtos cadastrados</a></li>
+
+                    </ul>
+                    </li>
+                    <li><a href="#">Cadastros</a>
+                        <ul>
+                            <li><a href="{% url 'Cadastro Cliente' %}">Cadastrar novo cliente</a></li>
+                            <li><a href="{% url 'Cadastro Funcionario' %}">Cadastrar novo funcion&aacute;rio</a></li>
+                            <li><a href="{% url 'Cadastro Produto' %}">Cadastrar novo produto</a></li>
+                            <li><a href="{% url 'Cadastro Venda' %}">Cadastrar nova venda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Venda</a>
+                        <ul>
+                            <li><a href="{% url 'Cadastro Venda' %}">Realizar nova venda</a></li>
+                            <li><a href="{% url 'Lista Venda' %}">Vendas efetuadas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'Sobre' %}">Sobre n&oacute;s</a></li>
+
+                </ul>
+            </nav>
+            <div id="corpo">
+
+            </div>
+            {% endblock  %}
+                <div id="rodape">
+                    <h1>Floricultura - MiniDevs</h1>
+                </div>
+
+        </div>
+    </body>
+</html>
+

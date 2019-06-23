@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <title>Sobre a empresa</title>
+    <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilo_sobre.css">
+</head>
+    <body>
+    <div id="container">
+        <div id="topo">
+        <p><a href="{% url 'Base' %}">Voltar para o in&iacute;cio</a></p>
+        <p>Floricultura - MiniDevs tem finalidade educacional...</p>
+        <p>Utilizamos o Framework Django para nos ajudar à constr&iacute;-lo.</p>
+        <br/>
+        <p>Coordenador Técnico: Prof. Eduilson</p>
+        <p>Desenvolvido por:</p>
+        </div>
+        <div id="bloco1">
+            <div id="masc01">
+                <p>J&aacute;rdesson;</p>
+                <img src="{% static "cliente/img/jardesson.jpeg" %}" alt="My image">
+            </div>
+            <div id="masc02">
+                <p>Anderson;</p>
+                <img src="{% static "cliente/img/anderson.jpeg" %}" alt="My image">
+            </div>
+            <div id="masc03">
+                <p>Denilson;</p>
+                <img src="{% static "cliente/img/denilson.jpeg" %}" alt="My image">
+            </div>
+        </div>
+        <div id="bloco2">
+            <div id="masc04">
+                <p>Johnny;</p>
+                <img src="{% static "cliente/img/john.jpg" %}" alt="My image">
+            </div>
+            <div id="fem01">
+                <p>La&iacute;s;</p>
+                <img src="{% static "cliente/img/lays.jpeg" %}" alt="My image">
+            </div>
+            <div id="fem02">
+                <p>Nayara Aguiar;</p>
+                <img src="{% static "cliente/img/nayara.jpeg" %}" alt="My image"
+            </div>
+        </div>
+        <div id="rodape">
+            &copy; Floricultura-MiniDevs, 2019. Todos os direitos reservados.
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documento</title>
+    <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilo_tabela_listagem.css">
+</head>
+<body>
+<div id="container">
+    <div id="topo">
+        <h1>LISTA DE PRODUTOS</h1>
+    </div>
+        <div id="menulateral">
+            <p><a href="{% url 'Cadastro Produto' %}">Cadastrar novo produto</a></p>
+            <p><a href="{% url 'Base' %}">Voltar para o in&iacute;cio</a></p>
+            <p><a href="{% url 'Home' %}">Ver menus</a></p>
+        </div>
+        <div id="position_table">
+        <table class="table">
+            <thead>
+                <tr id="topotabela">
+                    <th id="thnome">NOME</th>
+                    <th>DESCRI&Ccedil;&Atilde;O</th>
+                    <th>ESTOQUE</th>
+                    <th>VALOR</th>
+                    <th>OBSERVA&Ccedil;&Atilde;O</th>
+                </tr>
+            </thead>
+            {% for Produtos in produto %}
+                <tr>
+                    <td><a href="{% url 'Atualizar Produto' Produtos.id_produto %}">{{ Produtos.nome_produto }}</a></td>
+                    <td>{{ Produtos.descricao }}</td>
+                    <td>{{ Produtos.quantidade_produto }}</td>
+                    <td>{{ Produtos.valor_produto }}</td>
+                    <td>{{ Produtos.observacao }}</td>
+                </tr>
+            {% empty %}
+                <h3>Sem produtos cadastrados.</h3>
+            {% endfor %}
+        </table>
+         </div>
+</div>
+</body>
+</html>

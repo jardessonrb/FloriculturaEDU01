@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reportar erro no sistema</title>
+    <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilo_relato_erro.css">
+
+</head>
+<body>
+<div id="container">
+    <div id="topo">
+        <h1 id="titulo">Cadastro de Cliente</h1>
+    </div>
+    <div id="posiciona">
+    <fieldset id="fieldset">
+        <legend>Relatar Erros</legend>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+            <p><button type="submit">ENVIAR</button></p>
+        {% if erro %}
+            <a href="{% url 'Deletar Erro' erro.id_erro %}">DELETAR ERRO</a>
+        {% endif%}
+
+    </form>
+        </fieldset>
+        <p><a href="{% url 'Base' %}">Voltar para o in&iacute;cio</a></p>
+    </div>
+    <div id="rodape">
+        <h1>Floricultura - MiniDevs</h1>
+    </div>
+</div>
+</body>
+</html>

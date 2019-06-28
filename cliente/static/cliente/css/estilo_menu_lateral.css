@@ -1,0 +1,46 @@
+.menu{
+
+    width: 20%;
+    height: 50px;
+    margin-top: -30px;
+    background: #333;
+    font-family: 'Arial';
+}
+
+
+.menu ul{
+     list-style: none;
+     position: relative;
+}
+.menu ul li{
+    width: 150px;
+    float: left;
+}
+
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #333;
+    color: #FFFF;
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+       visibility: visible;
+}
+
+.menu a:hover{
+    background: #FFFF;
+    color: #333;
+
+}
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px; #ccc;
+}

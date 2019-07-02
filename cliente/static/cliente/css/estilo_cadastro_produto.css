@@ -1,3 +1,6 @@
+* html #container {
+	height: 100%; /* hack para IE6 que trata height como min-height */
+	}
 #container{
     position: relative;
 }
@@ -32,30 +35,37 @@ fieldset{
 }
 #rodape{
 
+    position: relative;
+    bottom: 0;
     background-color: #333;
     color: #FFFFFF;
-    position: relative;
-	bottom: 0;
 	top: 80px;
 	width: 100%;
 	height: 80px;
 	text-align: center;
 
 }
+label{
+   float: right;
+   margin-right: 80%;
+   margin-top: 2%;
+}
 input{
-    position:relative;
+    float: right;
     width: 45%;
     height: 22px;
-    margin-left: 10%;
+    margin-top: -20px;;
+    margin-right: 6%;
 }
 input:hover{
     border-color: #1E90FF;
 
 }
 textarea{
-    position: relative;
+    float: right;
     height: 100px;
-    margin-left: 5%;
+    width: 45%;
+    margin-right: 6%;
 
 }
 
@@ -68,9 +78,20 @@ button{
    color: #FFFFFF;
    width: 120px;
    height: 30px;
-   margin-left: 46%;
+   margin-left: 70%;
+   margin-top: 4px;
 }
 button:hover{
 
     background: #000000;
+}
+#link{
+    float: left;
+}
+span a{
+    color: #FFFFFF;
+
+}
+span a:hover{
+   color: #333;
 }

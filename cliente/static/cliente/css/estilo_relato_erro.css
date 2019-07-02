@@ -43,10 +43,16 @@ fieldset{
 
 }
 input{
-    position:relative;
-    width: 45%;
+    float: right;
+    width: 50%;
     height: 22px;
-    margin-left: 10%;
+    margin-right: 5%;
+
+}
+textarea{
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
 }
 input:hover{
     border-color: #1E90FF;
@@ -62,9 +68,23 @@ button{
    color: #FFFFFF;
    width: 120px;
    height: 30px;
-   margin-left: 46%;
+   margin-top: 2%;
+   margin-left: 72%;
 }
 button:hover{
 
     background: #000000;
+}
+
+#link{
+    position: relative;
+
+}
+span a{
+    float: left;
+    color: #FFFFFF;
+
+}
+span a:hover{
+   color: #333;
 }

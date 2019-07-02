@@ -16,8 +16,20 @@
     transition-timing-function:linear;
 }
 #topo:hover{
-     background: #CFCFCF;
+      background: #CFCFCF;
       color: #333;
+}
+#link{
+    position: relative;
+
+}
+span a{
+    float: left;
+    color: #FFFFFF;
+
+}
+span a:hover{
+   color: #333;
 }
 #posiciona{
     position: relative;
@@ -72,5 +84,6 @@ fieldset{
     height: 110%;
     text-align: center;
     margin-left: 23%;
+    background: #FFFFFF;
 
 }

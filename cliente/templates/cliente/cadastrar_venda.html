@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
+    {% load static%}
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -12,6 +13,7 @@
 <body>
 <div id="container">
     <div id="topo">
+        <div id="link"><span><a href="{% url 'Base' %}">Voltar para o in&iacute;cio</a></span></div>
         <h1 id="titulo">Cadastro de Venda</h1>
     </div>
     <div id="posiciona">

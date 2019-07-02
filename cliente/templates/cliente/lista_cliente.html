@@ -9,16 +9,23 @@
     {% load static %}
 
     <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilo_tabela_listagem.css">
+    <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilo_menu_lateral.css">
 </head>
 <body>
 <div id="conatiner">
     <div id="topo">
         <h1>LISTA DE CLIENTES</h1>
-    </div>
-    <div id="menulateral">
-        <p><a href="{% url 'Cadastro Cliente' %}">Cadastrar novo cliente</a></p>
-        <p><a href="{% url 'Base' %}">Voltar para o in&iacute;cio</a></p>
-        <p><a href="{% url 'Home' %}">Ver menus</a></p>
+        <div class="menu" id="menu">
+            <ul>
+                 <li><a href="#">Menus</a>
+                 <ul>
+                    <li><a href="{% url 'Cadastro Cliente' %}">Cadastrar novo cliente</a></li>
+                    <li><a href="{% url 'Base' %}">Voltar para o in&iacute;cio</a></li>
+                    <li><a href="{% url 'Home' %}">Ver menus</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
     </div>
     <div id="position_table">
         <table class="table">

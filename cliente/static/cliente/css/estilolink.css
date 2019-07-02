@@ -32,6 +32,18 @@ li a:hover {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+}
 
+#link{
+    position: relative;
 
 }
+span a{
+    float: left;
+    color: #FFFFFF;
+
+}
+span a:hover{
+   color: #333;
+}
+

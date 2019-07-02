@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="/static/cliente/css/menu_dropdown.css">
 </head>
-    <body  background="{% static "cliente/img/floricultura2.JPG" %}" alt="My image">
+    <body>
     {% block rodape %}
         <nav class="menu">
                 <ul>
@@ -17,7 +17,7 @@
                         <li><a href="{% url 'Lista Cliente' %}">Clientes cadastrados</a></li>
                         <li><a href="{% url 'Lista Funcionario' %}">Funcion&aacute;rios cadastrados</a></li>
                         <li><a href="{% url 'Lista Produto' %}">Produtos cadastrados</a></li>
-
+                        <li><a href="{% url 'Lista Erro' %}">Erros cadastrados</a></li>
                     </ul>
                     </li>
                     <li><a href="#">Cadastros</a>

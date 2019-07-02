@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    {% load static%}
-    <meta charset="UTF-8">
-    <title>Sobre a empresa</title>
-    <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilo_sobre.css">
+    <head>
+        {% load static%}
+        <meta charset="UTF-8">
+        <title>Sobre a empresa</title>
+        <link rel="stylesheet" type="text/css" href="/static/cliente/css/estilo_sobre.css">
+        <link rel="shortcut icon" href="{% static '/cliente/img/icone_flor.png' %}"/>
+    </head>
+    <body>
+        <div id="container">
+            <div id="topo">
+                <span id="btnvoltar"><a href="{% url 'Base' %}">Voltar para o In&iacute;cio </a></span>
+                <span id="teste">Floricultura - MiniDevs</span>
+                <p>Tem finalidade educacional, porém visando facilitar a automação de uma floricultura.</p>
+                <p>Utilizamos o Framework Django para nos ajudar a construi-lo.</p>
+                <p>Coordenador Técnico: Prof. Eduilson</p><br>
+                <p>Desenvolvido pelos alunos:</p>
+            </div>
+            <div id="corpo">
+            <div id="bloco1">
+                <div class="bloco_min" id="masc01">
+                    <img src="{% static '/cliente/img/jardesson.jpeg' %}" alt="My image">
+                    <p><span class="spanNome">Járdesson Ribeiro</span></p>
+                    <p><span>Altos-PI</span></p>
+                    <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
+                    <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
 
-</head>
-<body>
-    <div id="container">
-        <div id="topo">
-            <span id="btnvoltar"><a href="{% url 'Base' %}">Voltar para o In&iacute;cio </a></span>
-            <span id="teste">Floricultura - MiniDevs</span>
-            <p>Tem finalidade educacional, porém visando facilitar a automação de uma floricultura.</p>
-            <p>Utilizamos o Framework Django para nos ajudar a construi-lo.</p>
-            <p>Coordenador Técnico: Prof. Eduilson</p><br>
-            <p>Desenvolvido pelos alunos:</p>
-        </div>
-        <div id="corpo">
-        <div id="bloco1">
-            <div class="bloco_min" id="masc01">
-                <img src="{% static "cliente/img/jardesson.jpeg" %}" alt="My image">
-                <p><span class="spanNome">Járdesson Ribeiro</span></p>
-                <p><span>Altos-PI</span></p>
-                <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
-                <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
-
+                </div>
+                <div  class="bloco_min" id="masc02">
+                    <img src="{% static '/cliente/img/denilson.jpg' %}" alt="My image">
+                    <p><span class="spanNome">Denilson dos Santos</span></p>
+                    <p><span>Teresina-PI</span></p>
+                    <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
+                    <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
+                </div>
+                <div  class="bloco_min" id="masc03">
+                    <img src="{% static 'cliente/img/anderson.jpeg' %}" alt="My image">
+                    <p><span class="spanNome">Anderson Sousa</span></p>
+                    <p><span>José de Freitas-PI</span></p>
+                    <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
+                    <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
+                </div>
             </div>
-            <div  class="bloco_min" id="masc02">
-                <img src="{% static "cliente/img/denilson.jpeg" %}" alt="My image">
-                <p><span class="spanNome">Denilson</span></p>
-                <p><span>Teresina-PI</span></p>
-                <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
-                <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
+            <div id="bloco2">
+                <div  class="bloco_min" id="masc04">
+                    <img src="{% static 'cliente/img/johnny.jpg' %}" alt="My image">
+                    <p><span class="spanNome">Johnny Edwin</span></p>
+                    <p><span>Teresina-PI</span></p>
+                    <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
+                    <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
+                </div>
+                <div  class="bloco_min" id="fem01">
+                    <img src="{% static 'cliente/img/lays.jpg' %}" alt="My image">
+                    <p><span class="spanNome">La&iacute;s Azevedo</span></p>
+                    <p><span>Altos-PI</span></p>
+                    <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
+                    <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
+                </div>
+                <div  class="bloco_min" id="fem02">
+                    <img src="{% static 'cliente/img/nayara.jpeg' %}" alt="My image">
+                    <p><span class="spanNome">Nayara Aguiar</span></p>
+                    <p><span>Altos-PI</span></p>
+                    <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
+                    <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
+                </div>
             </div>
-            <div  class="bloco_min" id="masc03">
-                <img src="{% static "cliente/img/anderson.jpeg" %}" alt="My image">
-                <p><span class="spanNome">Anderson Sousa</span></p>
-                <p><span>José de Freitas-PI</span></p>
-                <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
-                <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
-            </div>
-        </div>
-        <div id="bloco2">
-            <div  class="bloco_min" id="masc04">
-                <img src="{% static "cliente/img/john.jpg" %}" alt="My image">
-                <p><span class="spanNome">Johnny</span></p>
-                <p><span>Teresina-PI</span></p>
-                <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
-                <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
-            </div>
-            <div  class="bloco_min" id="fem01">
-                <img src="{% static "cliente/img/lays.jpeg" %}" alt="My image">
-                <p><span class="spanNome">Lays</span></p>
-                <p><span>Altos-PI</span></p>
-                <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
-                <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
-            </div>
-            <div  class="bloco_min" id="fem02">
-                <img src="{% static "cliente/img/nayara.jpeg" %}" alt="My image">
-                <p><span class="spanNome">Nayara Aguiar</span></p>
-                <p><span>Altos-PI</span></p>
-                <p><span>Acadêmico - 4° Periodo Tec. Informática</span></p>
-                <span>IFPI - Instituto Federal de Educação, Ciência e Tecnologia do Piauí, 2019</span>
             </div>
         </div>
-        </div>
-</div>
-</body>
+    </body>
 </html>

@@ -1,0 +1,28 @@
+body{
+    background: #8B658B;
+}
+#nome_site{
+    position: relative;
+    margin-top: 14%;
+    width: 100%;
+}
+#nome_loja{
+    position: relative;
+    font-family: Back jack;
+    font-size: 150px;
+    margin-left: 14%;
+    color: #EEE8AA;
+    transition-propertiy: color;
+    transition-duration: 2s;
+    transition-timing-function:linear;
+}
+#nome_loja:hover{
+      color: #333;
+}
+#sublinha{
+    position: relative;
+    width: 80%;
+}
+
+
+}

@@ -1,3 +1,7 @@
+#{
+    margin: 0;
+    padding: 0;
+}
 #container{
     position: relative;
 }
@@ -21,6 +25,7 @@
 
     position: relative;
     top: 130px;
+    margin-bottom: -110px;
 
 }
 fieldset{
@@ -59,6 +64,8 @@ textarea{
     float: right;
     margin-right: 5%;
     margin-top: 2%;
+    width: 50%;
+
 }
 input:hover{
     border-color: #1E90FF;

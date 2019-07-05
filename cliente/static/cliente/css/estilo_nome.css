@@ -1,4 +1,4 @@
-body{
+/*body{
     background:#8B658B ;
 
 }
@@ -28,4 +28,34 @@ body{
 #nome_loja:hover{
       color: #333;
 }
+*/
+body{
 
+    background: #8B658B;
+}
+#conteudo_corpo{
+
+    position: relative;
+    /*border: 1px solid #DDFF00;*/
+    width: 50%;
+    height: 4vw;
+    text-align: center;
+    margin-top: 10%;
+    font-size: calc(4vw - 4px);
+
+}
+#nome_loja{
+    color: #EEE8AA;
+    transition-propertiy: color;
+    transition-duration: 1.5s;
+    transition-timing-function:linear;
+}
+#sublogo{
+    color: #EEE8AA;
+    font-size: calc(4vw - 20px);
+    transition-propertiy: color;
+    transition-duration: 1s;
+    transition-timing-function:linear;
+    transition-delay: 1.5s;
+    margin-left: 28%;
+}

@@ -32,8 +32,8 @@ td{
     width: 200px;
 }
 tr:hover{
-    background: #333;
-    color: #FFFFFF;
+    background: #87CEEB;
+    color: #333;
 }
 table{
     width: 85%;
@@ -47,7 +47,11 @@ table{
     width: 200px;
 }
 #topotabela{
-    background: #CFCFCF;
-      color: #333;
+    background: #333;
+    color: #FFFF;
 
+}
+#tabelaErro{
+    width: 80%;
+    margin-left: 20%;
 }

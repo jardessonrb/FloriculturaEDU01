@@ -24,13 +24,14 @@
 
     position: relative;
     top: 100px;
+    margin-bottom: -40px;
 
 
 }
 fieldset{
     position: relative;
     width: 50%;
-    height: 110%;
+
     text-align: center;
     margin-left: 23%;
 }

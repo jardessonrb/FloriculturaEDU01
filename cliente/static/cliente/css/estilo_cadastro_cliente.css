@@ -27,6 +27,7 @@ button{
    position: relative;
    text-align: center;
    size: 10px;
+   margin-top: 3px;
    font-family: arial;
    background: #333;
    color: #FFFFFF;
@@ -42,6 +43,7 @@ input{
     position:relative;
     width: 45%;
     height: 22px;
+    margin-top: 2px;
     margin-left: 35%;
 }
 input:hover{
@@ -58,7 +60,7 @@ label{
 fieldset{
     position: relative;
     width: 50%;
-    height: 110%;
+    height: 120%;
     text-align: center;
     margin-left: 23%;
 

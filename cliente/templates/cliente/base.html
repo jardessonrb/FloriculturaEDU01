@@ -11,12 +11,13 @@
 
 </head>
     <body>
-    {% block rodape %}
+    <div id="container">
+        <div id="topo">
         <nav class="menu">
             <ul>
                 <li><a href="{% url 'Cadastro Erro' %}">Relatar erro</a></li>
                 <li><a href="#">Listagem</a>
-                    <ul>
+                    <ul id="ulM">
                         <li><a href="{% url 'Lista Cliente' %}">Clientes cadastrados</a></li>
                         <li><a href="{% url 'Lista Funcionario' %}">Funcion&aacute;rios cadastrados</a></li>
                         <li><a href="{% url 'Lista Produto' %}">Produtos cadastrados</a></li>
@@ -40,17 +41,16 @@
                 <li><a href="{% url 'Sobre' %}">Sobre n&oacute;s</a></li>
             </ul>
         </nav>
-        <div id="corpo">
-            <div id="nome_site">
-                <span id="nome_loja"><u>Floricultura-MiniDevs</u></span>
-
-            </div>
-
         </div>
-        {% endblock  %}
+        <div id="corpo">
+            <div id="conteudo_corpo">
+            <span id="nome_loja"><u>Floricultura-MiniDevs</u></span>
+            </div>
+        </div>
         <div id="rodape">
             <h1>Floricultura - MiniDevs</h1>
         </div>
-    </body>
+</div>
+</body>
 </html>
 
